@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body configuration */
+body {
+  background: #F3F5FC;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* provides flex display with centered content and word wrap */
+main {
+  display: flex;
+  justify-content: center;
+  /*  quebra de linha */
+  word-wrap: break-word;
+}
+
+/* display flex in lines */
+.main_cont {
+  display: flex;
+  flex-direction: row;
+}
+
+/* display flex and margin-left  */
+.main_form {
+  display: flex;
+  margin-left: -200px;
+}
+
+/* display flex in column */
+.input_main {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Position Alura logo */
+figure {
+  margin: 24px 0 0;
+}
+
+/* input area style */
+textarea {
+  font-family: 'Inter';
+  font-size: 30px;
+
+  width: 600px;
+  height: 80%;
+
+  padding: 20px;
+  margin: 40px;
+  resize: none;
+
+  background: #F3F5FC;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.058);
+  border-radius: 1rem;
+  color: #0A3871;
+  outline: none;
+}
+
+/* alert and display box of buttons */
+.form_sent {
+  display: flex;
+  flex-direction: column;
+  text-align-last: center;
+}
+
+/* top distance alarm */
+.form_alert {
+  margin-top: 10px;
+}
+
+/* top distance buttons */
+.form_btns {
+  margin-top: 20px;
+}
+
+/* output style */
+#output {
+
+  font-family: 'Inter';
+  font-size: 31px;
+
+  height: 780px;
+  width: 450px;
+
+  padding: 20px;
+
+  overflow: auto;
+
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 1rem;
+  color: #0A3871;
+  word-wrap: break-word;
+}
+
+/* img aling and margin */
+#output img {
+  margin-top: 30%;
+  margin-left: 5%;
+  align-content: center;
+}
+
+/* image and text with alignment */
+#output img,
+#output p {
+  align-items: center;
+  text-align: center;
+}
+
+/* Button style */
+.btn-dark {
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.3);
+  padding: 15px;
+  margin: 6px;
+  background: #0A3871;
+  border-radius: 24px;
+  border: 1px solid #0A3871;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+/* Button style onclick */
+.btn-dark:hover {
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.3);
+  padding: 15px;
+  margin: 6px;
+  background: #D8DFE8;
+  border-radius: 24px;
+  border: 1px solid #0A3871;
+  color: #0A3871;
+  cursor: pointer;
+}
+
+/* output text styles */
+.main_text {
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  color: #343A40;
+}
+
+/* output subtext styles */
+.sub_text {
+  font-family: 'Inter';
+  text-align: center;
+  font-size: 24px;
+  color: #495057;
+}
+
+/* footer style */
+footer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+footer a {
+  color: #F3F5FC;
+}
+
+footer p {
+  margin-top: 10px;
+}
+
+/*--[ CSS Laptop ]----------------------------------------------------------------*/
+@media screen and (max-width: 10240px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .main_form {
+    margin-left: 0%;
+  }
+
+  /* Position Alura logo */
+  figure {
+    margin: 24px 0 0;
+    margin-left: -120px;
+  }
+
+  textarea {
+    font-family: 'Inter';
+    font-size: 30px;
+
+    width: 400px;
+    height: 80%;
+
+    padding: 20px;
+    margin: 40px;
+    resize: none;
+
+    background: #F3F5FC;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.058);
+    border-radius: 1rem;
+    color: #0A3871;
+    outline: none;
+  }
+
+  /* output style */
+  #output {
+
+    font-family: 'Inter';
+    font-size: 31px;
+
+    height: 780px;
+    width: 350px;
+
+    padding: 20px;
+
+    overflow: auto;
+
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 1rem;
+    color: #0A3871;
+    word-wrap: break-word;
+  }
+
+  #output img {
+    margin-top: 30%;
+    margin-left: -25px;
+    align-content: center;
+  }
+
+  #output img,
+  #output p {
+    align-items: center;
+    text-align: center;
+  }
+
+}
+
+/*--[ CSS Tablet ]----------------------------------------------------------------*/
+@media screen and (max-width: 930px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .main_form {
+    display: inline;
+  }
+
+  /* Position Alura logo */
+  figure {
+    margin: 24px 0 0;
+    margin-left: 50px;
+  }
+
+  textarea {
+    font-family: 'Inter';
+    font-size: 30px;
+
+    width: 600px;
+    height: 300px;
+
+    padding: 20px;
+    margin: 40px;
+    resize: none;
+
+    text-align: left;
+    background: #F3F5FC;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.058);
+    border-radius: 1rem;
+    color: #0A3871;
+    outline: none;
+  }
+
+  /* alert and display box of buttons */
+
+  .form_alert {
+    margin-top: -10px;
+  }
+
+  .form_btns {
+    margin-top: 20px;
+  }
+
+  /* output style */
+  #output {
+
+    font-family: 'Inter';
+    font-size: 31px;
+
+    min-height: 100px;
+    max-height: 200px;
+    width: 600px;
+
+    padding: 20px;
+
+    overflow: scroll;
+
+    margin-top: 30px;
+    margin-left: 40px;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 1rem;
+    color: #0A3871;
+    word-wrap: break-word;
+  }
+
+  #output img {
+    display: none;
+  }
+
+  /* OUTPUT */
+  .main_text {
+    margin-top: 10%;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 20px;
+    text-align: justify;
+    color: #343A40;
+  }
+
+  .sub_text {
+    font-family: 'Inter';
+    text-align: justify;
+    font-size: 15px;
+    color: #495057;
+  }
+
+  footer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  footer a {
+    color: #F3F5FC;
+  }
+}
+
+/*--[ CSS Mobile ]----------------------------------------------------------------*/
+@media screen and (max-width: 600px) {
+
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .main_form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+  }
+
+  /* Position Alura logo */
+  figure {
+    margin: 24px 0 0;
+    margin-left: 50px;
+  }
+
+  textarea {
+    font-family: 'Inter';
+    font-size: 30px;
+
+    width: 370px;
+    height: 300px;
+
+    padding: 20px;
+    margin: 40px;
+
+    resize: none;
+
+    background: #F3F5FC;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.058);
+    border-radius: 1rem;
+    color: #0A3871;
+    outline: none;
+  }
+
+  /* alert and display box of buttons */
+
+  .form_alert {
+    margin-top: -10px;
+  }
+
+  .form_btns {
+    margin-top: 20px;
+  }
+
+  /* output style */
+  #output {
+
+    font-family: 'Inter';
+    font-size: 31px;
+
+    min-height: 100px;
+    max-height: 200px;
+    width: 370px;
+
+    padding: 20px;
+
+    overflow: scroll;
+
+    margin-top: 30px;
+
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 1rem;
+    color: #0A3871;
+    word-wrap: break-word;
+  }
+
+
+  /* alert and display box of buttons */
+
+  .form_sent {
+    display: flex;
+    text-align-last: center;
+
+  }
+
+  footer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 35px;
+  }
+
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Text Decoder</title>
+    <!--Favicon-->
+    <link rel="shortcut icon" href="assets/img/logo.svg" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <main>
+
+        <section class="main_cont">
+
+            <div class="main_form">
+                <!-- Logo -->
+                <figure>
+                    <img src="assets/img/logo.svg" alt="">
+                </figure>
+
+                <!-- Input Area -->
+                <div class="input_main">
+                    <!--Sentence insertion area -->
+                    <textarea name="textbox" id="textbox" placeholder="Type your text..." maxlength="999"></textarea>
+
+                    <!-- Input  -->
+                    <div class="form_sent">
+
+                        <!-- Message below text insert -->
+                        <div class="form_alert">
+                            <!-- Img -->
+                            <img src="assets/img/exclamation.svg" alt="exclamation mark" width="12px" />
+
+                            <label for="textbox">Only lowercase letters and no accents.</label>
+                        </div>
+
+                        <!-- Buttons form -->
+                        <div class="form_btns">
+
+                            <!-- Buttons -->
+                            <button class="btn-dark" onClick="encryptText()" id="encrypt">Encrypt</button>
+
+                            <button class="btn-dark" onClick="decryptText()" id="decrypt">Decrypt</button>
+
+                            <button class="btn-dark" onClick="copyText()" id="copy">Copy</button>
+
+                            <button class="btn-dark" onClick="clearText()" id="clear">Clear</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Output Area -->
+                <div id="output">
+                    <!-- Img -->
+                    <img src="assets/img/personlooking.svg" alt="a person looking at a diamond with a magnifying glass">
+
+                    <!-- text bold -->
+                    <p class="main_text">No message found</p>
+
+                    <!-- text legend -->
+                    <p class="sub_text">Enter text that you want to encrypt or decrypt.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Footer Area -->
+    <footer>
+        <div class="socialmedias">
+
+            <!-- Social Medias -->
+            <a href="https://github.com/igmarcondes/" target="_blank"><img src="assets/img/github.svg" />
+            </a>
+
+            <a href="https://www.linkedin.com/in/igmarcondes/" target="_blank"><img src="assets/img/linkedin.svg" />
+            </a>
+
+            <!-- Credits -->
+            <p class="p-footer">Copyright - All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+
+</html>
