@@ -20,5 +20,5 @@ The font for "Montserrat light 300", its size and line spacing;
 Background and shadow colors;
 The page layout for mobile devices;
 
-Without JavaScript:
+Without JavaScript: 
 I created the encode, decode, copy and clean functions;
