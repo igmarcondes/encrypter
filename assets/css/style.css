@@ -176,10 +176,11 @@ footer p {
 
 /*--[ CSS Laptop ]----------------------------------------------------------------*/
 @media screen and (max-width: 10240px) {
-
   body {
+    margin: 0;
     overflow-x: hidden;
   }
+
 
   .main_form {
     margin-left: 0%;
@@ -249,6 +250,7 @@ footer p {
 @media screen and (max-width: 930px) {
 
   body {
+    margin: 0;
     overflow-x: hidden;
   }
 
@@ -354,6 +356,7 @@ footer p {
 
 
   body {
+    margin: 0;
     overflow-x: hidden;
   }
 
