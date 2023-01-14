@@ -9,7 +9,7 @@
 /* Body configuration */
 body {
   background: #F3F5FC;
-  padding: 4px;
+  padding: 0px;
   display: flex;
   flex-direction: column;
 }
